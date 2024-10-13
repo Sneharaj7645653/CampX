@@ -1,114 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CampX</title>
-    <link rel="icon" href="https://res.cloudinary.com/dgr21eiov/image/upload/v1724751921/Title-icon-3.png" type="image/icon type">
-    <link crossorigin="anonymous" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I">
-    <link rel="stylesheet" href="/stylesheets/home.css">
-</head>
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dgr21eiov/image/upload/v1724751921/Title-icon-3.png"
+      type="image/icon type"
+    />
+    <link
+      crossorigin="anonymous"
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+    />
+    <link rel="stylesheet" href="/stylesheets/home.css" />
+  </head>
 
-<body class="d-flex text-center text-white bg-dark">
+  <body class="d-flex text-center text-white bg-dark">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="mb-auto">
-            <div>
-                <h3 class="float-md-left mb-0">Camp</h3>
-                <h2 class="float-md-left mb-0">X</h2>
-                <nav class="nav nav-masthead justify-content-center float-md-right">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="/campgrounds">Campgrounds</a>
-                    <% if(!currentUser) { %>
-                    <a class="nav-link" href="/login">Login</a>
-                    <a class="nav-link" href="/register">Register</a>
-                    <% } else { %>
-                    <a class="nav-link" href="/logout">Logout</a>
-                    <% } %>
-                </nav>
-            </div>
-        </header>
-        <main class="px-3">
-            <h1>CampX</h1>
-            <p class="lead"> Welcome to CampX! <br> Jump right in and explore our many campgrounds. <br>
-                Feel free to share some of your own and comment on others!</p>
-            <a href="/campgrounds" class="btn btn-lg btn-secondary font-weight-bold border-white bg-white">View
-                Campgrounds</a>
-        </main>
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-md-left mb-0">Camp</h3>
+          <h2 class="float-md-left mb-0">X</h2>
+          <nav class="nav nav-masthead justify-content-center float-md-right">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="/campgrounds">Campgrounds</a>
+            <% if(!currentUser) { %>
+            <a class="nav-link" href="/login">Login</a>
+            <a class="nav-link" href="/register">Register</a>
+            <% } else { %>
+            <a class="nav-link" href="/logout">Logout</a>
+            <% } %>
+          </nav>
+        </div>
+      </header>
+      <main class="px-3">
+        <h1>CampX</h1>
+        <p class="lead">
+          Welcome to CampX! <br />
+          Jump right in and explore our many campgrounds. <br />
+          Feel free to share some of your own and comment on others!
+        </p>
+        <a
+          href="/campgrounds"
+          class="btn btn-lg btn-secondary font-weight-bold border-white bg-white"
+          >View Campgrounds</a
+        >
+      </main>
 
-        <!-- <footer class="mt-auto text-white-50">
+      <!-- <footer class="mt-auto text-white-50">
             <p>&copy; 2024 </p>
         </footer> -->
 
-
-
-
-
-
-        <footer class="site-footer">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-12 col-md-6">
-                  <h6>About</h6>
-                  <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
-                </div>
-      
-                <div class="col-xs-6 col-md-3">
-                  <h6>Categories</h6>
-                  <ul class="footer-links">
-                    <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-                    <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-                    <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-                    <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-                    <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-                    <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-                  </ul>
-                </div>
-      
-                <div class="col-xs-6 col-md-3">
-                  <h6>Quick Links</h6>
-                  <ul class="footer-links">
-                    <li><a href="http://scanfcode.com/about/">About Us</a></li>
-                    <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-                    <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-                    <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-                    <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
-                  </ul>
-                </div>
-              </div>
-              <hr>
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">
+                CampX is an open-source project that allows users to discover
+                and share campgrounds from around the world. It is developed and
+                maintained by VigneshDevHub, a dedicated open-source
+                organization committed to fostering collaboration and innovation
+                within the global development community
+              </p>
             </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
-                  <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-               <a href="#">Scanfcode</a>.
-                  </p>
-                </div>
-      
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                  <ul class="social-icons">
-                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-                  </ul>
-                </div>
-              </div>
+
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li>
+                  <a href="http://scanfcode.com/category/c-language/">C</a>
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/category/front-end-development/"
+                    >UI Design</a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/category/back-end-development/"
+                    >PHP</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="http://scanfcode.com/category/java-programming-language/"
+                    >Java</a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/category/android/">Android</a>
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/category/templates/"
+                    >Templates</a
+                  >
+                </li>
+              </ul>
             </div>
+
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                <li>
+                  <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                    >Contribute</a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/privacy-policy/"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">
+                Copyright &copy; 2017 All Rights Reserved by
+                <a href="#">Scanfcode</a>.
+              </p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li>
+                  <a class="facebook" href="#"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a class="dribbble" href="#"
+                    ><i class="fa fa-dribbble"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="linkedin" href="#"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </footer>
-
-
     </div>
 
-
-    <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        ></script>
-    <script crossorigin="anonymous" src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-        ></script>
-</body>
-
+    <script
+      crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    ></script>
+  </body>
 </html>
